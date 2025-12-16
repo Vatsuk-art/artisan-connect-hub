@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Products", path: "/products" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -39,9 +39,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button variant="gold" size="sm" asChild>
-              <Link to="/contact">Get in Touch</Link>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -72,11 +69,6 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button variant="gold" className="mt-2" asChild>
-                <Link to="/contact" onClick={() => setIsOpen(false)}>
-                  Get in Touch
-                </Link>
-              </Button>
             </div>
           </div>
         )}
