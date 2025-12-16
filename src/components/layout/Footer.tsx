@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block mb-4">
-              <img src={logo} alt="EramR Global" className="h-14 w-auto" />
+              <img src={logo} alt="EramR Global" className="h-20 w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Premium handicrafts & decor manufacturer and exporter, bringing traditional artistry to the world.
