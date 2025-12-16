@@ -21,13 +21,19 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg text-foreground mb-4">Quick Links</h4>
             <ul className="space-y-3">
-              {["Home", "About Us", "Products", "Contact"].map((item) => (
-                <li key={item}>
+              {[
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Products", path: "/products" },
+                { name: "Gallery", path: "/gallery" },
+                { name: "Contact", path: "/contact" },
+              ].map((item) => (
+                <li key={item.name}>
                   <Link
-                    to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
+                    to={item.path}
                     className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </li>
               ))}
