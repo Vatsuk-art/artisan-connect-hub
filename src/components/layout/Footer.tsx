@@ -25,7 +25,6 @@ const Footer = () => {
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/about" },
                 { name: "Products", path: "/products" },
-                { name: "Gallery", path: "/gallery" },
                 { name: "Contact", path: "/contact" },
               ].map((item) => (
                 <li key={item.name}>
@@ -44,7 +43,7 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg text-foreground mb-4">Our Crafts</h4>
             <ul className="space-y-3">
-              {["Metal Work", "Textiles", "Wood Carving", "Pottery"].map((item) => (
+              {["Bathroom Accessories", "Furniture", "Wall Decor", "Tables", "Chandeliers", "Lights"].map((item) => (
                 <li key={item}>
                   <Link
                     to="/products"

@@ -2,36 +2,68 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
-import metalworkImage from "@/assets/product-metalwork.jpg";
-import textilesImage from "@/assets/product-textiles.jpg";
-import woodworkImage from "@/assets/product-woodwork.jpg";
-import potteryImage from "@/assets/product-pottery.jpg";
 import heroImage from "@/assets/hero-handicrafts.jpg";
 
-const categories = [
+// ============================================
+// PRODUCT DATA - Add your products here
+// ============================================
+// To add a new product:
+// 1. Import the image at the top of the file: import myImage from "@/assets/my-image.jpg";
+// 2. Add a new object to the products array in the relevant category
+// 3. Include: name, image, and description
+
+// Placeholder for when no image is available yet
+const placeholderImage = "/placeholder.svg";
+
+interface Product {
+  name: string;
+  image: string;
+  description: string;
+}
+
+interface Category {
+  name: string;
+  products: Product[];
+}
+
+const categories: Category[] = [
   {
-    name: "Metal Work",
-    image: metalworkImage,
-    description: "Exquisite brass and copper pieces featuring traditional Indian motifs. Our metalwork includes decorative vessels, sculptures, lamps, and religious artifacts crafted by master artisans.",
-    items: ["Brass Urns & Vases", "Copper Vessels", "Decorative Lamps", "Religious Artifacts", "Wall Hangings"],
+    name: "Bathroom Accessories",
+    products: [
+      // Add products like this:
+      // { name: "Brass Towel Holder", image: importedImage, description: "Handcrafted brass towel holder with intricate designs" },
+      { name: "Coming Soon", image: placeholderImage, description: "Beautiful handcrafted bathroom accessories coming soon. Contact us for custom orders." },
+    ],
   },
   {
-    name: "Textiles",
-    image: textilesImage,
-    description: "Handwoven fabrics showcasing India's rich textile heritage. From silk sarees with gold thread embroidery to intricate tapestries and home furnishings.",
-    items: ["Silk Fabrics", "Embroidered Textiles", "Handwoven Rugs", "Decorative Throws", "Table Linens"],
+    name: "Furniture",
+    products: [
+      { name: "Coming Soon", image: placeholderImage, description: "Exquisite handcrafted furniture pieces coming soon. Contact us for custom orders." },
+    ],
   },
   {
-    name: "Wood Carving",
-    image: woodworkImage,
-    description: "Masterfully carved furniture and decorative items in rosewood, teak, and sandalwood. Each piece showcases traditional carving techniques passed down through generations.",
-    items: ["Carved Furniture", "Decorative Panels", "Wooden Sculptures", "Jewelry Boxes", "Mirror Frames"],
+    name: "Wall Decor",
+    products: [
+      { name: "Coming Soon", image: placeholderImage, description: "Stunning wall decor pieces coming soon. Contact us for custom orders." },
+    ],
   },
   {
-    name: "Pottery & Ceramics",
-    image: potteryImage,
-    description: "Artistic ceramics including blue pottery, terracotta items, and glazed earthenware. Our pottery combines traditional forms with contemporary aesthetics.",
-    items: ["Blue Pottery", "Terracotta Items", "Glazed Ceramics", "Decorative Plates", "Planters & Vases"],
+    name: "Tables",
+    products: [
+      { name: "Coming Soon", image: placeholderImage, description: "Elegant handcrafted tables coming soon. Contact us for custom orders." },
+    ],
+  },
+  {
+    name: "Chandeliers",
+    products: [
+      { name: "Coming Soon", image: placeholderImage, description: "Magnificent chandeliers coming soon. Contact us for custom orders." },
+    ],
+  },
+  {
+    name: "Lights",
+    products: [
+      { name: "Coming Soon", image: placeholderImage, description: "Beautiful lighting solutions coming soon. Contact us for custom orders." },
+    ],
   },
 ];
 
@@ -55,7 +87,7 @@ const Products = () => {
               Handcrafted <span className="text-gradient-gold">Treasures</span>
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
-              Explore our curated collection of authentic Indian handicrafts. Each piece is a testament to the skill and dedication of our artisans.
+              Explore our curated collection of authentic Indian handicrafts. To purchase any product, please contact us directly.
             </p>
           </div>
         </div>
@@ -64,61 +96,57 @@ const Products = () => {
       {/* Categories */}
       <section className="bg-background">
         <div className="container-custom section-padding">
-          {categories.map((category, index) => (
-            <div
-              key={category.name}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-20 last:mb-0 ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
-            >
-              <div
-                className={`${index % 2 === 1 ? "lg:order-2" : ""} animate-fade-in opacity-0`}
-                style={{ animationDelay: "0.2s" }}
-              >
-                <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              </div>
-              
-              <div
-                className={`${index % 2 === 1 ? "lg:order-1" : ""} animate-fade-in opacity-0`}
-                style={{ animationDelay: "0.4s" }}
-              >
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+          {categories.map((category, categoryIndex) => (
+            <div key={category.name} className="mb-16 last:mb-0">
+              {/* Category Header */}
+              <div className="mb-8 animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-2">
                   {category.name.split(" ")[0]}{" "}
-                  <span className="text-gradient-gold">{category.name.split(" ").slice(1).join(" ") || category.name.split(" ")[0]}</span>
+                  <span className="text-gradient-gold">
+                    {category.name.split(" ").slice(1).join(" ") || ""}
+                  </span>
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  {category.description}
-                </p>
-                <div className="mb-8">
-                  <h4 className="text-sm uppercase tracking-wider text-primary mb-3">Featured Items</h4>
-                  <ul className="grid grid-cols-2 gap-2">
-                    {category.items.map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-muted-foreground text-sm">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <Button variant="outline" asChild>
-                  <Link to="/contact">
-                    Inquire About {category.name}
-                    <ArrowRight size={18} />
-                  </Link>
-                </Button>
+                <div className="w-20 h-1 bg-primary rounded-full" />
+              </div>
+
+              {/* Products Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {category.products.map((product, productIndex) => (
+                  <div
+                    key={`${category.name}-${product.name}-${productIndex}`}
+                    className="group bg-card rounded-lg border border-border/50 overflow-hidden hover:border-primary/50 transition-all duration-300 animate-fade-in opacity-0"
+                    style={{ animationDelay: `${0.1 + productIndex * 0.05}s` }}
+                  >
+                    <div className="relative aspect-square overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display text-lg text-foreground mb-2">
+                        {product.name}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                        {product.description}
+                      </p>
+                      <Button variant="outline" size="sm" asChild className="w-full">
+                        <Link to="/contact">
+                          Inquire Now
+                          <ArrowRight size={16} />
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Custom Orders */}
+      {/* Custom Orders CTA */}
       <section className="bg-charcoal-light border-t border-border/50">
         <div className="container-custom section-padding">
           <div className="bg-card rounded-2xl p-8 md:p-12 border border-border/50 text-center">
@@ -130,7 +158,7 @@ const Products = () => {
             </p>
             <Button variant="gold" size="lg" asChild>
               <Link to="/contact">
-                Discuss Your Requirements
+                Contact Us to Order
                 <ArrowRight size={18} />
               </Link>
             </Button>
