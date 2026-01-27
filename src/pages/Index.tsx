@@ -3,16 +3,20 @@ import { ArrowRight, Award, Globe, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import heroImage from "@/assets/hero-handicrafts.jpg";
-import metalworkImage from "@/assets/product-metalwork.jpg";
-import textilesImage from "@/assets/product-textiles.jpg";
-import woodworkImage from "@/assets/product-woodwork.jpg";
-import potteryImage from "@/assets/product-pottery.jpg";
+import bathroomImage from "@/assets/category-bathroom.jpg";
+import furnitureImage from "@/assets/category-furniture.jpg";
+import wallDecorImage from "@/assets/category-wall-decor.jpg";
+import tablesImage from "@/assets/category-tables.jpg";
+import chandeliersImage from "@/assets/category-chandeliers.jpg";
+import lightsImage from "@/assets/category-lights.jpg";
 
-const products = [
-  { name: "Metal Work", image: metalworkImage, desc: "Exquisite brass & copper craftsmanship" },
-  { name: "Textiles", image: textilesImage, desc: "Handwoven fabrics & embroidery" },
-  { name: "Wood Carving", image: woodworkImage, desc: "Traditional carved furniture & decor" },
-  { name: "Pottery", image: potteryImage, desc: "Artistic ceramics & terracotta" },
+const categories = [
+  { name: "Bathroom Accessories", slug: "bathroom-accessories", image: bathroomImage, desc: "Elegant brass & copper bathroom fittings" },
+  { name: "Furniture", slug: "furniture", image: furnitureImage, desc: "Handcrafted traditional furniture pieces" },
+  { name: "Wall Decor", slug: "wall-decor", image: wallDecorImage, desc: "Decorative metal wall art & hangings" },
+  { name: "Tables", slug: "tables", image: tablesImage, desc: "Ornate carved wooden tables" },
+  { name: "Chandeliers", slug: "chandeliers", image: chandeliersImage, desc: "Luxurious crystal & brass chandeliers" },
+  { name: "Lights", slug: "lights", image: lightsImage, desc: "Traditional decorative lighting" },
 ];
 
 const features = [
@@ -95,25 +99,25 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {categories.map((category, index) => (
               <Link
-                key={product.name}
-                to="/products"
+                key={category.name}
+                to={`/products?category=${category.slug}`}
                 className="group relative overflow-hidden rounded-lg aspect-[4/5] animate-fade-in opacity-0"
                 style={{ animationDelay: `${0.2 + index * 0.1}s` }}
               >
                 <img
-                  src={product.image}
-                  alt={product.name}
+                  src={category.image}
+                  alt={category.name}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="font-display text-xl text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
-                    {product.name}
+                    {category.name}
                   </h3>
-                  <p className="text-muted-foreground text-sm">{product.desc}</p>
+                  <p className="text-muted-foreground text-sm">{category.desc}</p>
                 </div>
               </Link>
             ))}
