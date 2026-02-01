@@ -24,6 +24,18 @@ import walldecorMetalArtBlue from "@/assets/walldecor-metal-art-blue.jpg";
 import walldecorLotusFlowers from "@/assets/walldecor-lotus-flowers.jpg";
 import walldecorGoldenFlowers from "@/assets/walldecor-golden-flowers.jpg";
 
+// Tables Images
+import tableDining from "@/assets/table-dining.jpg";
+import tableOctagonCoffee from "@/assets/table-octagon-coffee.jpg";
+import tableMarbleRound from "@/assets/table-marble-round.jpg";
+import tableBrassFrame from "@/assets/table-brass-frame.jpg";
+import tableBarCart from "@/assets/table-bar-cart.jpg";
+import tableRattanSet from "@/assets/table-rattan-set.jpg";
+
+// Bathroom Images
+import bathroomGlassShelf from "@/assets/bathroom-glass-shelf.jpg";
+import bathroomChromeRack from "@/assets/bathroom-chrome-rack.jpg";
+
 // ============================================
 // PRODUCT DATA - Add your products here
 // ============================================
@@ -51,7 +63,8 @@ const categories: Category[] = [
     name: "Bathroom Accessories",
     slug: "bathroom-accessories",
     products: [
-      { name: "Coming Soon", image: placeholderImage, description: "Beautiful handcrafted bathroom accessories coming soon. Contact us for custom orders." },
+      { name: "Three-Tier Glass Shelf", image: bathroomGlassShelf, description: "Elegant chrome and glass three-tier wall shelf, perfect for bathroom storage and display." },
+      { name: "Chrome Double Rack Shelf", image: bathroomChromeRack, description: "Sturdy stainless steel double-tier wall rack, ideal for toiletries and towels." },
     ],
   },
   {
@@ -86,7 +99,12 @@ const categories: Category[] = [
     name: "Tables",
     slug: "tables",
     products: [
-      { name: "Coming Soon", image: placeholderImage, description: "Elegant handcrafted tables coming soon. Contact us for custom orders." },
+      { name: "Modern Dining Table Set", image: tableDining, description: "Contemporary oak dining table with sleek design, seats 8 comfortably with matching chairs." },
+      { name: "Octagonal Marble Coffee Table", image: tableOctagonCoffee, description: "Luxurious octagonal coffee table with black marble top and geometric brass base." },
+      { name: "Round Marble Center Table", image: tableMarbleRound, description: "Elegant round coffee table with white marble top and sculptural gold-finish base." },
+      { name: "Brass Frame Dining Table", image: tableBrassFrame, description: "Stunning polished brass dining table frame with modern geometric design for glass top." },
+      { name: "Three-Tier Bar Cart", image: tableBarCart, description: "Minimalist matte black bar cart with three glass tiers and brass accent wheels." },
+      { name: "Rattan Table & Stool Set", image: tableRattanSet, description: "Handwoven natural rattan table set with matching barrel stools, perfect for patios." },
     ],
   },
   {
