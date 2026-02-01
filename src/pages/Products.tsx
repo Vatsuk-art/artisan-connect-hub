@@ -4,6 +4,15 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import heroImage from "@/assets/hero-handicrafts.jpg";
 
+// Furniture Images
+import furnitureSofaSet from "@/assets/furniture-sofa-set.jpg";
+import furnitureCopperVase from "@/assets/furniture-copper-vase.jpg";
+import furnitureBrassVase from "@/assets/furniture-brass-vase.jpg";
+import furnitureCeramicVase from "@/assets/furniture-ceramic-vase.jpg";
+import furnitureBrassMirror from "@/assets/furniture-brass-mirror.jpg";
+import furnitureRoyalChair from "@/assets/furniture-royal-chair.jpg";
+import furnitureVelvetChair from "@/assets/furniture-velvet-chair.jpg";
+
 // ============================================
 // PRODUCT DATA - Add your products here
 // ============================================
@@ -38,7 +47,13 @@ const categories: Category[] = [
     name: "Furniture",
     slug: "furniture",
     products: [
-      { name: "Coming Soon", image: placeholderImage, description: "Exquisite handcrafted furniture pieces coming soon. Contact us for custom orders." },
+      { name: "Royal Carved Sofa Set", image: furnitureSofaSet, description: "Luxurious hand-carved wooden sofa set with intricate floral patterns and premium upholstery." },
+      { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
+      { name: "Antique Brass Flower Vase", image: furnitureBrassVase, description: "Classic brass vases with embossed floral designs, perfect for traditional interiors." },
+      { name: "Ceramic Vase with Blossom Art", image: furnitureCeramicVase, description: "Handpainted ceramic vases featuring cherry blossom artwork with brass trim." },
+      { name: "Three-Panel Brass Mirror", image: furnitureBrassMirror, description: "Vintage-style brass frame tri-fold mirror, ideal for dressing rooms and boutiques." },
+      { name: "Victorian Royal Accent Chair", image: furnitureRoyalChair, description: "Opulent hand-carved accent chair with gold leaf finish and premium fabric upholstery." },
+      { name: "Blush Velvet Accent Chair", image: furnitureVelvetChair, description: "Modern velvet upholstered chair in soft pink with elegant channeled back design." },
     ],
   },
   {
@@ -165,7 +180,7 @@ const Products = () => {
                     className="group bg-card rounded-lg border border-border/50 overflow-hidden hover:border-primary/50 transition-all duration-300 animate-fade-in opacity-0"
                     style={{ animationDelay: `${0.1 + productIndex * 0.05}s` }}
                   >
-                    <div className="relative aspect-square overflow-hidden">
+                    <div className="relative aspect-[4/5] overflow-hidden">
                       <img
                         src={product.image}
                         alt={product.name}
