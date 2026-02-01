@@ -13,6 +13,17 @@ import furnitureBrassMirror from "@/assets/furniture-brass-mirror.jpg";
 import furnitureRoyalChair from "@/assets/furniture-royal-chair.jpg";
 import furnitureVelvetChair from "@/assets/furniture-velvet-chair.jpg";
 
+// Wall Decor Images
+import walldecorGinkgoArt from "@/assets/walldecor-ginkgo-art.jpg";
+import walldecorTrifoldMirror from "@/assets/walldecor-trifold-mirror.jpg";
+import walldecorOctagonMirror from "@/assets/walldecor-octagon-mirror.jpg";
+import walldecorCandleHolders from "@/assets/walldecor-candle-holders.jpg";
+import walldecorMirrorShelf from "@/assets/walldecor-mirror-shelf.jpg";
+import walldecorHangingCandle from "@/assets/walldecor-hanging-candle.jpg";
+import walldecorMetalArtBlue from "@/assets/walldecor-metal-art-blue.jpg";
+import walldecorLotusFlowers from "@/assets/walldecor-lotus-flowers.jpg";
+import walldecorGoldenFlowers from "@/assets/walldecor-golden-flowers.jpg";
+
 // ============================================
 // PRODUCT DATA - Add your products here
 // ============================================
@@ -60,7 +71,15 @@ const categories: Category[] = [
     name: "Wall Decor",
     slug: "wall-decor",
     products: [
-      { name: "Coming Soon", image: placeholderImage, description: "Stunning wall decor pieces coming soon. Contact us for custom orders." },
+      { name: "Teal Ginkgo Leaf Canvas Art", image: walldecorGinkgoArt, description: "Elegant canvas art featuring teal ginkgo leaves with gold accents on textured background." },
+      { name: "Brass Tri-Fold Wall Mirror", image: walldecorTrifoldMirror, description: "Minimalist brass-framed trifold wall mirror with chain hanging, perfect for modern spaces." },
+      { name: "Octagonal Brass Mirror", image: walldecorOctagonMirror, description: "Classic octagonal mirror with polished brass frame, adds geometric elegance to any room." },
+      { name: "Modern Gold Candle Holders", image: walldecorCandleHolders, description: "Contemporary brass candle holders with geometric designs, ideal for minimalist decor." },
+      { name: "Mirror with Display Shelf", image: walldecorMirrorShelf, description: "Functional brass-framed mirror featuring an integrated shelf for decorative displays." },
+      { name: "Teardrop Hanging Candle Holder", image: walldecorHangingCandle, description: "Handcrafted brass teardrop-shaped hanging candle holder with three tea light spaces." },
+      { name: "Blue Abstract Metal Wall Art", image: walldecorMetalArtBlue, description: "Stunning metal wall sculpture with blue and gold circular patterns, a true statement piece." },
+      { name: "Lotus Flower Metal Wall Art", image: walldecorLotusFlowers, description: "Elegant metal wall art featuring dark teal lotus flowers with gold accents." },
+      { name: "Golden Floral Wall Sculpture", image: walldecorGoldenFlowers, description: "Handcrafted metal wall sculpture with cascading golden flowers in varied tones." },
     ],
   },
   {
