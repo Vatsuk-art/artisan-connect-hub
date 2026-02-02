@@ -48,7 +48,17 @@ import chandelierBranchCrystal from "@/assets/chandelier-branch-crystal.jpg";
 import chandelierGrandBallroom from "@/assets/chandelier-grand-ballroom.jpg";
 import chandelierSpiralCrystal from "@/assets/chandelier-spiral-crystal.jpg";
 
-// ============================================
+// Lights Images
+import lightsBluePorcelain from "@/assets/lights-blue-porcelain.jpg";
+import lightsTealMarble from "@/assets/lights-teal-marble.jpg";
+import lightsBrassFloral from "@/assets/lights-brass-floral.jpg";
+import lightsPorcelainFloral from "@/assets/lights-porcelain-floral.jpg";
+import lightsBlueGinger from "@/assets/lights-blue-ginger.jpg";
+import lightsBlushPendant from "@/assets/lights-blush-pendant.jpg";
+import lightsGreenRibbed from "@/assets/lights-green-ribbed.jpg";
+import lightsFloorTray from "@/assets/lights-floor-tray.jpg";
+import lightsFloorCone from "@/assets/lights-floor-cone.jpg";
+import lightsWallSconce from "@/assets/lights-wall-sconce.jpg";
 // PRODUCT DATA - Add your products here
 // ============================================
 // To add a new product:
@@ -139,7 +149,16 @@ const categories: Category[] = [
     name: "Lights",
     slug: "lights",
     products: [
-      { name: "Coming Soon", image: placeholderImage, description: "Beautiful lighting solutions coming soon. Contact us for custom orders." },
+      { name: "Blue Porcelain Table Lamp", image: lightsBluePorcelain, description: "Classic blue and white porcelain ginger jar lamp with intricate floral patterns and silk shade." },
+      { name: "Teal Marble Table Lamp", image: lightsTealMarble, description: "Elegant teal marble-finish lamp with brass floral appliqué and pleated cream shade." },
+      { name: "Brass Floral Table Lamp", image: lightsBrassFloral, description: "Sophisticated satin brass lamp with embossed floral branch design and pleated shade." },
+      { name: "Black Floral Porcelain Lamp", image: lightsPorcelainFloral, description: "Stunning black and white floral porcelain lamp with polished brass accents." },
+      { name: "Blue Ginger Jar Lamp", image: lightsBlueGinger, description: "Ribbed blue ceramic ginger jar lamp with brass leaf detail and classic pleated shade." },
+      { name: "Blush Globe Pendant", image: lightsBlushPendant, description: "Modern blush pink glass globe pendant with cluster design, perfect for contemporary spaces." },
+      { name: "Forest Green Table Lamp", image: lightsGreenRibbed, description: "Ribbed ceramic lamp in deep forest green with brass floral accents and pleated shade." },
+      { name: "Floor Lamp with Tray", image: lightsFloorTray, description: "Modern brass floor lamp with integrated display tray and black shade with gold interior." },
+      { name: "Cone Floor Lamp", image: lightsFloorCone, description: "Industrial-chic floor lamp with brass cone shade and wooden display shelf." },
+      { name: "Mid-Century Wall Sconce", image: lightsWallSconce, description: "Retro-inspired double wall sconce with two-tone shades and adjustable brass arms." },
     ],
   },
 ];
