@@ -36,6 +36,18 @@ import tableRattanSet from "@/assets/table-rattan-set.jpg";
 import bathroomGlassShelf from "@/assets/bathroom-glass-shelf.jpg";
 import bathroomChromeRack from "@/assets/bathroom-chrome-rack.jpg";
 
+// Chandelier Images
+import chandelierVolcanicPendant from "@/assets/chandelier-volcanic-pendant.jpg";
+import chandelierTealDome from "@/assets/chandelier-teal-dome.jpg";
+import chandelierBlueBrass from "@/assets/chandelier-blue-brass.jpg";
+import chandelierCrystalGlobe from "@/assets/chandelier-crystal-globe.jpg";
+import chandelierClassicCrystal from "@/assets/chandelier-classic-crystal.jpg";
+import chandelierTeardropRain from "@/assets/chandelier-teardrop-rain.jpg";
+import chandelierModernLoop from "@/assets/chandelier-modern-loop.jpg";
+import chandelierBranchCrystal from "@/assets/chandelier-branch-crystal.jpg";
+import chandelierGrandBallroom from "@/assets/chandelier-grand-ballroom.jpg";
+import chandelierSpiralCrystal from "@/assets/chandelier-spiral-crystal.jpg";
+
 // ============================================
 // PRODUCT DATA - Add your products here
 // ============================================
@@ -111,7 +123,16 @@ const categories: Category[] = [
     name: "Chandeliers",
     slug: "chandeliers",
     products: [
-      { name: "Coming Soon", image: placeholderImage, description: "Magnificent chandeliers coming soon. Contact us for custom orders." },
+      { name: "Volcanic Pendant Light", image: chandelierVolcanicPendant, description: "Dramatic handcrafted pendant with textured volcanic exterior and warm gold-leaf interior." },
+      { name: "Teal Dome Pendant", image: chandelierTealDome, description: "Contemporary dome pendant in rich teal with textured finish and warm ambient glow." },
+      { name: "Mid-Century Blue Chandelier", image: chandelierBlueBrass, description: "Retro-inspired three-arm chandelier with blue shades and polished brass accents." },
+      { name: "Crystal Globe Pendant", image: chandelierCrystalGlobe, description: "Stunning spherical pendant covered in glittering crystal beads for elegant spaces." },
+      { name: "Grand Crystal Chandelier", image: chandelierClassicCrystal, description: "Majestic multi-tier crystal chandelier with cascading prisms and candle-style lights." },
+      { name: "Teardrop Rain Chandelier", image: chandelierTeardropRain, description: "Modern rectangular chandelier with cascading glass teardrop pendants and brass rods." },
+      { name: "Modern Loop Chandelier", image: chandelierModernLoop, description: "Contemporary gold-finish chandelier with geometric oval frames and globe lights." },
+      { name: "Branch Crystal Chandelier", image: chandelierBranchCrystal, description: "Nature-inspired brass branch design with delicate crystal droplets and warm lighting." },
+      { name: "Grand Ballroom Installation", image: chandelierGrandBallroom, description: "Custom luxury chandelier installation with crystal curtains and golden rod centerpiece." },
+      { name: "Spiral Crystal Cascade", image: chandelierSpiralCrystal, description: "Dramatic spiral design with crystal beads and sphere, perfect for high ceilings." },
     ],
   },
   {
