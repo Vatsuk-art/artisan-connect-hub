@@ -35,6 +35,13 @@ import tableRattanSet from "@/assets/table-rattan-set.jpg";
 // Bathroom Images
 import bathroomGlassShelf from "@/assets/bathroom-glass-shelf.jpg";
 import bathroomChromeRack from "@/assets/bathroom-chrome-rack.jpg";
+import bathroomGoldSink from "@/assets/bathroom-gold-sink.jpg";
+import bathroomBrassShelf from "@/assets/bathroom-brass-shelf.jpg";
+import bathroomRoundMirror from "@/assets/bathroom-round-mirror.jpg";
+import bathroomWallMirrorShelf from "@/assets/bathroom-wall-mirror-shelf.jpg";
+import bathroomGeometricMirror from "@/assets/bathroom-geometric-mirror.jpg";
+import bathroomGoldBathSet from "@/assets/bathroom-gold-bath-set.jpg";
+import bathroomWhiteGoldSet from "@/assets/bathroom-white-gold-set.jpg";
 
 // Chandelier Images
 import chandelierVolcanicPendant from "@/assets/chandelier-volcanic-pendant.jpg";
@@ -87,6 +94,13 @@ const categories: Category[] = [
     products: [
       { name: "Three-Tier Glass Shelf", image: bathroomGlassShelf, description: "Elegant chrome and glass three-tier wall shelf, perfect for bathroom storage and display." },
       { name: "Chrome Double Rack Shelf", image: bathroomChromeRack, description: "Sturdy stainless steel double-tier wall rack, ideal for toiletries and towels." },
+      { name: "Sculpted Gold Sink Basin", image: bathroomGoldSink, description: "Luxurious handcrafted gold-plated sink basin with organic sculptural form and artistic finish." },
+      { name: "Brass & Glass Wall Shelf", image: bathroomBrassShelf, description: "Elegant two-tier bathroom shelf with polished brass frame and tempered glass shelves." },
+      { name: "Round Hanging Mirror", image: bathroomRoundMirror, description: "Minimalist round wall mirror with silver frame and decorative ring hanger detail." },
+      { name: "Wall Mirror with Shelf", image: bathroomWallMirrorShelf, description: "Vintage-style brass-framed mirror with integrated glass shelf and chain hanger." },
+      { name: "Geometric Console Mirror", image: bathroomGeometricMirror, description: "Modern geometric mirror with abstract multi-panel design and matching console table." },
+      { name: "Gold Plating Bath Set", image: bathroomGoldBathSet, description: "Complete 5-piece gold-plated bathroom accessory set including dispenser, tumbler, and soap dish." },
+      { name: "White & Gold Bath Collection", image: bathroomWhiteGoldSet, description: "Elegant matte white ceramic bath set with brass accents, includes dispenser, tray, and vanity mirror." },
     ],
   },
   {
