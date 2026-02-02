@@ -66,6 +66,13 @@ import lightsGreenRibbed from "@/assets/lights-green-ribbed.jpg";
 import lightsFloorTray from "@/assets/lights-floor-tray.jpg";
 import lightsFloorCone from "@/assets/lights-floor-cone.jpg";
 import lightsWallSconce from "@/assets/lights-wall-sconce.jpg";
+
+// Handicraft Images
+import handicraftWovenTray from "@/assets/handicraft-woven-tray.jpg";
+import handicraftSeagrassBasket from "@/assets/handicraft-seagrass-basket.jpg";
+import handicraftHamperBasket from "@/assets/handicraft-hamper-basket.jpg";
+import handicraftBambooLantern from "@/assets/handicraft-bamboo-lantern.jpg";
+import handicraftRattanBell from "@/assets/handicraft-rattan-bell.jpg";
 // PRODUCT DATA - Add your products here
 // ============================================
 // To add a new product:
@@ -173,6 +180,17 @@ const categories: Category[] = [
       { name: "Floor Lamp with Tray", image: lightsFloorTray, description: "Modern brass floor lamp with integrated display tray and black shade with gold interior." },
       { name: "Cone Floor Lamp", image: lightsFloorCone, description: "Industrial-chic floor lamp with brass cone shade and wooden display shelf." },
       { name: "Mid-Century Wall Sconce", image: lightsWallSconce, description: "Retro-inspired double wall sconce with two-tone shades and adjustable brass arms." },
+    ],
+  },
+  {
+    name: "Handicrafts",
+    slug: "handicrafts",
+    products: [
+      { name: "Woven Decorative Tray", image: handicraftWovenTray, description: "Handwoven round tray with intricate copper and gold weave pattern and cream handles." },
+      { name: "Seagrass Basket Set", image: handicraftSeagrassBasket, description: "Natural seagrass nesting baskets, handcrafted with traditional weaving techniques." },
+      { name: "Wire Hamper Basket", image: handicraftHamperBasket, description: "Elegant rattan and wire basket with metal handle, perfect for storage or display." },
+      { name: "Bamboo Woven Lanterns", image: handicraftBambooLantern, description: "Set of handwoven bamboo lanterns with intricate diagonal pattern and natural finish." },
+      { name: "Rattan Bell Pendant", image: handicraftRattanBell, description: "Large handcrafted rattan bell-shaped pendant with open weave design and bamboo handle." },
     ],
   },
 ];
