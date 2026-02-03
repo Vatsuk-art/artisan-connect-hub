@@ -101,7 +101,7 @@ const categories: Category[] = [
     products: [
       { name: "Three-Tier Glass Shelf", image: bathroomGlassShelf, description: "Elegant chrome and glass three-tier wall shelf, perfect for bathroom storage and display." },
       { name: "Chrome Double Rack Shelf", image: bathroomChromeRack, description: "Sturdy stainless steel double-tier wall rack, ideal for toiletries and towels." },
-      { name: "Sculpted Gold Sink Basin", image: bathroomGoldSink, description: "Luxurious handcrafted gold-plated sink basin with organic sculptural form and artistic finish." },
+      { name: "Sculpted Gold Soap Case", image: bathroomGoldSink, description: "Luxurious handcrafted gold-plated soap case with organic sculptural form and artistic finish." },
       { name: "Brass & Glass Wall Shelf", image: bathroomBrassShelf, description: "Elegant two-tier bathroom shelf with polished brass frame and tempered glass shelves." },
       { name: "Round Hanging Mirror", image: bathroomRoundMirror, description: "Minimalist round wall mirror with silver frame and decorative ring hanger detail." },
       { name: "Wall Mirror with Shelf", image: bathroomWallMirrorShelf, description: "Vintage-style brass-framed mirror with integrated glass shelf and chain hanger." },
