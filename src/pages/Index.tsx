@@ -9,14 +9,16 @@ import wallDecorImage from "@/assets/category-wall-decor.jpg";
 import tablesImage from "@/assets/category-tables.jpg";
 import chandeliersImage from "@/assets/category-chandeliers.jpg";
 import lightsImage from "@/assets/category-lights.jpg";
+import handicraftsImage from "@/assets/hero-handicrafts.jpg";
 
 const categories = [
   { name: "Bathroom Accessories", slug: "bathroom-accessories", image: bathroomImage, desc: "Elegant brass & copper bathroom fittings" },
   { name: "Furniture", slug: "furniture", image: furnitureImage, desc: "Handcrafted traditional furniture pieces" },
   { name: "Wall Decor", slug: "wall-decor", image: wallDecorImage, desc: "Decorative metal wall art & hangings" },
   { name: "Tables", slug: "tables", image: tablesImage, desc: "Ornate carved wooden tables" },
-  { name: "Chandeliers", slug: "chandeliers", image: chandeliersImage, desc: "Luxurious crystal & brass chandeliers" },
-  { name: "Lights", slug: "lights", image: lightsImage, desc: "Traditional decorative lighting" },
+  { name: "Lamps & Chandeliers", slug: "lamps-chandeliers", image: chandeliersImage, desc: "Luxurious lamps, pendants & chandeliers" },
+  { name: "Display Items", slug: "display-items", image: lightsImage, desc: "Vases, decorative pieces & accents" },
+  { name: "Handicrafts", slug: "handicrafts", image: handicraftsImage, desc: "Traditional woven & natural crafts" },
 ];
 
 const features = [
@@ -40,7 +42,7 @@ const Index = () => {
         <div className="relative container-custom section-padding">
           <div className="max-w-2xl">
             <p className="text-primary font-medium tracking-wider uppercase mb-4 animate-fade-in opacity-0" style={{ animationDelay: "0.2s" }}>
-              Handicrafts & Decor Manufacturer
+              Handicrafts & Decor Manufacturer & Exporter
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight mb-6 animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
               Timeless Artistry,{" "}

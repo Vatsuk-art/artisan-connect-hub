@@ -15,8 +15,9 @@ const productCategories = [
   { name: "Furniture", slug: "furniture" },
   { name: "Wall Decor", slug: "wall-decor" },
   { name: "Tables", slug: "tables" },
-  { name: "Chandeliers", slug: "chandeliers" },
-  { name: "Lights", slug: "lights" },
+  { name: "Lamps & Chandeliers", slug: "lamps-chandeliers" },
+  { name: "Display Items", slug: "display-items" },
+  { name: "Handicrafts", slug: "handicrafts" },
 ];
 
 const Navbar = () => {
