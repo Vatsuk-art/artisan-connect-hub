@@ -108,6 +108,10 @@ const categories: Category[] = [
       { name: "Geometric Console Mirror", image: bathroomGeometricMirror, description: "Modern geometric mirror with abstract multi-panel design and matching console table." },
       { name: "Gold Plating Bath Set", image: bathroomGoldBathSet, description: "Complete 5-piece gold-plated bathroom accessory set including dispenser, tumbler, and soap dish." },
       { name: "White & Gold Bath Collection", image: bathroomWhiteGoldSet, description: "Elegant matte white ceramic bath set with brass accents, includes dispenser, tray, and vanity mirror." },
+      { name: "Brass Tri-Fold Wall Mirror", image: walldecorTrifoldMirror, description: "Minimalist brass-framed trifold wall mirror with chain hanging, perfect for modern spaces." },
+      { name: "Octagonal Brass Mirror", image: walldecorOctagonMirror, description: "Classic octagonal mirror with polished brass frame, adds geometric elegance to any room." },
+      { name: "Mirror with Display Shelf", image: walldecorMirrorShelf, description: "Functional brass-framed mirror featuring an integrated shelf for decorative displays." },
+      { name: "Three-Panel Brass Mirror", image: furnitureBrassMirror, description: "Vintage-style brass frame tri-fold mirror, ideal for dressing rooms and boutiques." },
     ],
   },
   {
@@ -115,10 +119,6 @@ const categories: Category[] = [
     slug: "furniture",
     products: [
       { name: "Royal Carved Sofa Set", image: furnitureSofaSet, description: "Luxurious hand-carved wooden sofa set with intricate floral patterns and premium upholstery." },
-      { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
-      { name: "Antique Brass Flower Vase", image: furnitureBrassVase, description: "Classic brass vases with embossed floral designs, perfect for traditional interiors." },
-      { name: "Ceramic Vase with Blossom Art", image: furnitureCeramicVase, description: "Handpainted ceramic vases featuring cherry blossom artwork with brass trim." },
-      { name: "Three-Panel Brass Mirror", image: furnitureBrassMirror, description: "Vintage-style brass frame tri-fold mirror, ideal for dressing rooms and boutiques." },
       { name: "Victorian Royal Accent Chair", image: furnitureRoyalChair, description: "Opulent hand-carved accent chair with gold leaf finish and premium fabric upholstery." },
       { name: "Blush Velvet Accent Chair", image: furnitureVelvetChair, description: "Modern velvet upholstered chair in soft pink with elegant channeled back design." },
     ],
@@ -128,10 +128,7 @@ const categories: Category[] = [
     slug: "wall-decor",
     products: [
       { name: "Teal Ginkgo Leaf Canvas Art", image: walldecorGinkgoArt, description: "Elegant canvas art featuring teal ginkgo leaves with gold accents on textured background." },
-      { name: "Brass Tri-Fold Wall Mirror", image: walldecorTrifoldMirror, description: "Minimalist brass-framed trifold wall mirror with chain hanging, perfect for modern spaces." },
-      { name: "Octagonal Brass Mirror", image: walldecorOctagonMirror, description: "Classic octagonal mirror with polished brass frame, adds geometric elegance to any room." },
       { name: "Modern Gold Candle Holders", image: walldecorCandleHolders, description: "Contemporary brass candle holders with geometric designs, ideal for minimalist decor." },
-      { name: "Mirror with Display Shelf", image: walldecorMirrorShelf, description: "Functional brass-framed mirror featuring an integrated shelf for decorative displays." },
       { name: "Teardrop Hanging Candle Holder", image: walldecorHangingCandle, description: "Handcrafted brass teardrop-shaped hanging candle holder with three tea light spaces." },
       { name: "Blue Abstract Metal Wall Art", image: walldecorMetalArtBlue, description: "Stunning metal wall sculpture with blue and gold circular patterns, a true statement piece." },
       { name: "Lotus Flower Metal Wall Art", image: walldecorLotusFlowers, description: "Elegant metal wall art featuring dark teal lotus flowers with gold accents." },
@@ -151,8 +148,8 @@ const categories: Category[] = [
     ],
   },
   {
-    name: "Chandeliers",
-    slug: "chandeliers",
+    name: "Lamps & Chandeliers",
+    slug: "lamps-chandeliers",
     products: [
       { name: "Volcanic Pendant Light", image: chandelierVolcanicPendant, description: "Dramatic handcrafted pendant with textured volcanic exterior and warm gold-leaf interior." },
       { name: "Teal Dome Pendant", image: chandelierTealDome, description: "Contemporary dome pendant in rich teal with textured finish and warm ambient glow." },
@@ -164,12 +161,6 @@ const categories: Category[] = [
       { name: "Branch Crystal Chandelier", image: chandelierBranchCrystal, description: "Nature-inspired brass branch design with delicate crystal droplets and warm lighting." },
       { name: "Grand Ballroom Installation", image: chandelierGrandBallroom, description: "Custom luxury chandelier installation with crystal curtains and golden rod centerpiece." },
       { name: "Spiral Crystal Cascade", image: chandelierSpiralCrystal, description: "Dramatic spiral design with crystal beads and sphere, perfect for high ceilings." },
-    ],
-  },
-  {
-    name: "Lights",
-    slug: "lights",
-    products: [
       { name: "Blue Porcelain Table Lamp", image: lightsBluePorcelain, description: "Classic blue and white porcelain ginger jar lamp with intricate floral patterns and silk shade." },
       { name: "Teal Marble Table Lamp", image: lightsTealMarble, description: "Elegant teal marble-finish lamp with brass floral appliqué and pleated cream shade." },
       { name: "Brass Floral Table Lamp", image: lightsBrassFloral, description: "Sophisticated satin brass lamp with embossed floral branch design and pleated shade." },
@@ -180,6 +171,15 @@ const categories: Category[] = [
       { name: "Floor Lamp with Tray", image: lightsFloorTray, description: "Modern brass floor lamp with integrated display tray and black shade with gold interior." },
       { name: "Cone Floor Lamp", image: lightsFloorCone, description: "Industrial-chic floor lamp with brass cone shade and wooden display shelf." },
       { name: "Mid-Century Wall Sconce", image: lightsWallSconce, description: "Retro-inspired double wall sconce with two-tone shades and adjustable brass arms." },
+    ],
+  },
+  {
+    name: "Display Items",
+    slug: "display-items",
+    products: [
+      { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
+      { name: "Antique Brass Flower Vase", image: furnitureBrassVase, description: "Classic brass vases with embossed floral designs, perfect for traditional interiors." },
+      { name: "Ceramic Vase with Blossom Art", image: furnitureCeramicVase, description: "Handpainted ceramic vases featuring cherry blossom artwork with brass trim." },
     ],
   },
   {
