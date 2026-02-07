@@ -73,6 +73,14 @@ import handicraftSeagrassBasket from "@/assets/handicraft-seagrass-basket.jpg";
 import handicraftHamperBasket from "@/assets/handicraft-hamper-basket.jpg";
 import handicraftBambooLantern from "@/assets/handicraft-bamboo-lantern.jpg";
 import handicraftRattanBell from "@/assets/handicraft-rattan-bell.jpg";
+
+// New Display Items
+import displayGoldCandlestick from "@/assets/display-gold-candlestick.jpg";
+import displaySilverBowl from "@/assets/display-silver-bowl.jpg";
+
+// New Furniture & Table additions
+import furnitureMosaicMirror from "@/assets/furniture-mosaic-mirror.jpg";
+import tableMosaicNesting from "@/assets/table-mosaic-nesting.jpg";
 // PRODUCT DATA - Add your products here
 // ============================================
 // To add a new product:
@@ -118,6 +126,7 @@ const categories: Category[] = [
     name: "Furniture",
     slug: "furniture",
     products: [
+      { name: "Mosaic Half-Moon Mirror", image: furnitureMosaicMirror, description: "Stunning half-moon mirror with mother-of-pearl mosaic inlay and matte black frame." },
       { name: "Royal Carved Sofa Set", image: furnitureSofaSet, description: "Luxurious hand-carved wooden sofa set with intricate floral patterns and premium upholstery." },
       { name: "Victorian Royal Accent Chair", image: furnitureRoyalChair, description: "Opulent hand-carved accent chair with gold leaf finish and premium fabric upholstery." },
       { name: "Blush Velvet Accent Chair", image: furnitureVelvetChair, description: "Modern velvet upholstered chair in soft pink with elegant channeled back design." },
@@ -139,9 +148,10 @@ const categories: Category[] = [
     name: "Tables",
     slug: "tables",
     products: [
-      { name: "Modern Dining Table Set", image: tableDining, description: "Contemporary oak dining table with sleek design, seats 8 comfortably with matching chairs." },
       { name: "Octagonal Marble Coffee Table", image: tableOctagonCoffee, description: "Luxurious octagonal coffee table with black marble top and geometric brass base." },
       { name: "Round Marble Center Table", image: tableMarbleRound, description: "Elegant round coffee table with white marble top and sculptural gold-finish base." },
+      { name: "Mosaic Nesting Tables", image: tableMosaicNesting, description: "Modern nesting table set with glass top and handcrafted mother-of-pearl mosaic lower shelf." },
+      { name: "Modern Dining Table Set", image: tableDining, description: "Contemporary oak dining table with sleek design, seats 8 comfortably with matching chairs." },
       { name: "Brass Frame Dining Table", image: tableBrassFrame, description: "Stunning polished brass dining table frame with modern geometric design for glass top." },
       { name: "Three-Tier Bar Cart", image: tableBarCart, description: "Minimalist matte black bar cart with three glass tiers and brass accent wheels." },
       { name: "Rattan Table & Stool Set", image: tableRattanSet, description: "Handwoven natural rattan table set with matching barrel stools, perfect for patios." },
@@ -177,6 +187,8 @@ const categories: Category[] = [
     name: "Display Items",
     slug: "display-items",
     products: [
+      { name: "Sculptural Gold Candlestick", image: displayGoldCandlestick, description: "Handcrafted molten-style gold candlestick holder with organic sculptural form and luxurious finish." },
+      { name: "Silver Sculpted Bowl", image: displaySilverBowl, description: "Contemporary silver-plated decorative bowl with organic crumpled form, perfect as a statement piece." },
       { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
       { name: "Antique Brass Flower Vase", image: furnitureBrassVase, description: "Classic brass vases with embossed floral designs, perfect for traditional interiors." },
       { name: "Ceramic Vase with Blossom Art", image: furnitureCeramicVase, description: "Handpainted ceramic vases featuring cherry blossom artwork with brass trim." },
