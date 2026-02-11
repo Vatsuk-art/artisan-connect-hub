@@ -73,6 +73,9 @@ import handicraftSeagrassBasket from "@/assets/handicraft-seagrass-basket.jpg";
 import handicraftHamperBasket from "@/assets/handicraft-hamper-basket.jpg";
 import handicraftBambooLantern from "@/assets/handicraft-bamboo-lantern.jpg";
 import handicraftRattanBell from "@/assets/handicraft-rattan-bell.jpg";
+import handicraftRattanFlowerPendant from "@/assets/handicraft-rattan-flower-pendant.jpg";
+import handicraftWovenGlowPendant from "@/assets/handicraft-woven-glow-pendant.jpg";
+import handicraftRattanLanternCluster from "@/assets/handicraft-rattan-lantern-cluster.jpg";
 
 // New Display Items
 import displayGoldCandlestick from "@/assets/display-gold-candlestick.jpg";
@@ -108,14 +111,14 @@ const categories: Category[] = [
     slug: "bathroom-accessories",
     products: [
       { name: "Three-Tier Glass Shelf", image: bathroomGlassShelf, description: "Elegant chrome and glass three-tier wall shelf, perfect for bathroom storage and display." },
-      { name: "Chrome Double Rack Shelf", image: bathroomChromeRack, description: "Sturdy stainless steel double-tier wall rack, ideal for toiletries and towels." },
       { name: "Sculpted Gold Soap Case", image: bathroomGoldSink, description: "Luxurious handcrafted gold-plated soap case with organic sculptural form and artistic finish." },
       { name: "Brass & Glass Wall Shelf", image: bathroomBrassShelf, description: "Elegant two-tier bathroom shelf with polished brass frame and tempered glass shelves." },
       { name: "Round Hanging Mirror", image: bathroomRoundMirror, description: "Minimalist round wall mirror with silver frame and decorative ring hanger detail." },
+      { name: "Gold Plating Bath Set", image: bathroomGoldBathSet, description: "Complete 5-piece gold-plated bathroom accessory set including dispenser, tumbler, and soap dish." },
       { name: "Wall Mirror with Shelf", image: bathroomWallMirrorShelf, description: "Vintage-style brass-framed mirror with integrated glass shelf and chain hanger." },
       { name: "Geometric Console Mirror", image: bathroomGeometricMirror, description: "Modern geometric mirror with abstract multi-panel design and matching console table." },
-      { name: "Gold Plating Bath Set", image: bathroomGoldBathSet, description: "Complete 5-piece gold-plated bathroom accessory set including dispenser, tumbler, and soap dish." },
       { name: "White & Gold Bath Collection", image: bathroomWhiteGoldSet, description: "Elegant matte white ceramic bath set with brass accents, includes dispenser, tray, and vanity mirror." },
+      { name: "Chrome Double Rack Shelf", image: bathroomChromeRack, description: "Sturdy stainless steel double-tier wall rack, ideal for toiletries and towels." },
       { name: "Brass Tri-Fold Wall Mirror", image: walldecorTrifoldMirror, description: "Minimalist brass-framed trifold wall mirror with chain hanging, perfect for modern spaces." },
       { name: "Octagonal Brass Mirror", image: walldecorOctagonMirror, description: "Classic octagonal mirror with polished brass frame, adds geometric elegance to any room." },
       { name: "Mirror with Display Shelf", image: walldecorMirrorShelf, description: "Functional brass-framed mirror featuring an integrated shelf for decorative displays." },
@@ -137,8 +140,6 @@ const categories: Category[] = [
     slug: "wall-decor",
     products: [
       { name: "Teal Ginkgo Leaf Canvas Art", image: walldecorGinkgoArt, description: "Elegant canvas art featuring teal ginkgo leaves with gold accents on textured background." },
-      { name: "Modern Gold Candle Holders", image: walldecorCandleHolders, description: "Contemporary brass candle holders with geometric designs, ideal for minimalist decor." },
-      { name: "Teardrop Hanging Candle Holder", image: walldecorHangingCandle, description: "Handcrafted brass teardrop-shaped hanging candle holder with three tea light spaces." },
       { name: "Blue Abstract Metal Wall Art", image: walldecorMetalArtBlue, description: "Stunning metal wall sculpture with blue and gold circular patterns, a true statement piece." },
       { name: "Lotus Flower Metal Wall Art", image: walldecorLotusFlowers, description: "Elegant metal wall art featuring dark teal lotus flowers with gold accents." },
       { name: "Golden Floral Wall Sculpture", image: walldecorGoldenFlowers, description: "Handcrafted metal wall sculpture with cascading golden flowers in varied tones." },
@@ -161,24 +162,23 @@ const categories: Category[] = [
     name: "Lamps & Chandeliers",
     slug: "lamps-chandeliers",
     products: [
-      { name: "Volcanic Pendant Light", image: chandelierVolcanicPendant, description: "Dramatic handcrafted pendant with textured volcanic exterior and warm gold-leaf interior." },
-      { name: "Teal Dome Pendant", image: chandelierTealDome, description: "Contemporary dome pendant in rich teal with textured finish and warm ambient glow." },
-      { name: "Mid-Century Blue Chandelier", image: chandelierBlueBrass, description: "Retro-inspired three-arm chandelier with blue shades and polished brass accents." },
-      { name: "Crystal Globe Pendant", image: chandelierCrystalGlobe, description: "Stunning spherical pendant covered in glittering crystal beads for elegant spaces." },
       { name: "Grand Crystal Chandelier", image: chandelierClassicCrystal, description: "Majestic multi-tier crystal chandelier with cascading prisms and candle-style lights." },
-      { name: "Teardrop Rain Chandelier", image: chandelierTeardropRain, description: "Modern rectangular chandelier with cascading glass teardrop pendants and brass rods." },
-      { name: "Modern Loop Chandelier", image: chandelierModernLoop, description: "Contemporary gold-finish chandelier with geometric oval frames and globe lights." },
-      { name: "Branch Crystal Chandelier", image: chandelierBranchCrystal, description: "Nature-inspired brass branch design with delicate crystal droplets and warm lighting." },
-      { name: "Grand Ballroom Installation", image: chandelierGrandBallroom, description: "Custom luxury chandelier installation with crystal curtains and golden rod centerpiece." },
-      { name: "Spiral Crystal Cascade", image: chandelierSpiralCrystal, description: "Dramatic spiral design with crystal beads and sphere, perfect for high ceilings." },
       { name: "Blue Porcelain Table Lamp", image: lightsBluePorcelain, description: "Classic blue and white porcelain ginger jar lamp with intricate floral patterns and silk shade." },
-      { name: "Teal Marble Table Lamp", image: lightsTealMarble, description: "Elegant teal marble-finish lamp with brass floral appliqué and pleated cream shade." },
+      { name: "Volcanic Pendant Light", image: chandelierVolcanicPendant, description: "Dramatic handcrafted pendant with textured volcanic exterior and warm gold-leaf interior." },
       { name: "Brass Floral Table Lamp", image: lightsBrassFloral, description: "Sophisticated satin brass lamp with embossed floral branch design and pleated shade." },
-      { name: "Black Floral Porcelain Lamp", image: lightsPorcelainFloral, description: "Stunning black and white floral porcelain lamp with polished brass accents." },
-      { name: "Blue Ginger Jar Lamp", image: lightsBlueGinger, description: "Ribbed blue ceramic ginger jar lamp with brass leaf detail and classic pleated shade." },
-      { name: "Blush Globe Pendant", image: lightsBlushPendant, description: "Modern blush pink glass globe pendant with cluster design, perfect for contemporary spaces." },
+      { name: "Teardrop Rain Chandelier", image: chandelierTeardropRain, description: "Modern rectangular chandelier with cascading glass teardrop pendants and brass rods." },
       { name: "Forest Green Table Lamp", image: lightsGreenRibbed, description: "Ribbed ceramic lamp in deep forest green with brass floral accents and pleated shade." },
+      { name: "Crystal Globe Pendant", image: chandelierCrystalGlobe, description: "Stunning spherical pendant covered in glittering crystal beads for elegant spaces." },
+      { name: "Teal Marble Table Lamp", image: lightsTealMarble, description: "Elegant teal marble-finish lamp with brass floral appliqué and pleated cream shade." },
+      { name: "Mid-Century Blue Chandelier", image: chandelierBlueBrass, description: "Retro-inspired three-arm chandelier with blue shades and polished brass accents." },
+      { name: "Blush Globe Pendant", image: lightsBlushPendant, description: "Modern blush pink glass globe pendant with cluster design, perfect for contemporary spaces." },
+      { name: "Modern Loop Chandelier", image: chandelierModernLoop, description: "Contemporary gold-finish chandelier with geometric oval frames and globe lights." },
+      { name: "Black Floral Porcelain Lamp", image: lightsPorcelainFloral, description: "Stunning black and white floral porcelain lamp with polished brass accents." },
+      { name: "Branch Crystal Chandelier", image: chandelierBranchCrystal, description: "Nature-inspired brass branch design with delicate crystal droplets and warm lighting." },
       { name: "Floor Lamp with Tray", image: lightsFloorTray, description: "Modern brass floor lamp with integrated display tray and black shade with gold interior." },
+      { name: "Spiral Crystal Cascade", image: chandelierSpiralCrystal, description: "Dramatic spiral design with crystal beads and sphere, perfect for high ceilings." },
+      { name: "Blue Ginger Jar Lamp", image: lightsBlueGinger, description: "Ribbed blue ceramic ginger jar lamp with brass leaf detail and classic pleated shade." },
+      { name: "Grand Ballroom Installation", image: chandelierGrandBallroom, description: "Custom luxury chandelier installation with crystal curtains and golden rod centerpiece." },
       { name: "Cone Floor Lamp", image: lightsFloorCone, description: "Industrial-chic floor lamp with brass cone shade and wooden display shelf." },
       { name: "Mid-Century Wall Sconce", image: lightsWallSconce, description: "Retro-inspired double wall sconce with two-tone shades and adjustable brass arms." },
     ],
@@ -189,6 +189,8 @@ const categories: Category[] = [
     products: [
       { name: "Sculptural Gold Candlestick", image: displayGoldCandlestick, description: "Handcrafted molten-style gold candlestick holder with organic sculptural form and luxurious finish." },
       { name: "Silver Sculpted Bowl", image: displaySilverBowl, description: "Contemporary silver-plated decorative bowl with organic crumpled form, perfect as a statement piece." },
+      { name: "Modern Gold Candle Holders", image: walldecorCandleHolders, description: "Contemporary brass candle holders with geometric designs, ideal for minimalist decor." },
+      { name: "Teardrop Hanging Candle Holder", image: walldecorHangingCandle, description: "Handcrafted brass teardrop-shaped hanging candle holder with three tea light spaces." },
       { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
       { name: "Antique Brass Flower Vase", image: furnitureBrassVase, description: "Classic brass vases with embossed floral designs, perfect for traditional interiors." },
       { name: "Ceramic Vase with Blossom Art", image: furnitureCeramicVase, description: "Handpainted ceramic vases featuring cherry blossom artwork with brass trim." },
@@ -199,8 +201,11 @@ const categories: Category[] = [
     slug: "handicrafts",
     products: [
       { name: "Woven Decorative Tray", image: handicraftWovenTray, description: "Handwoven round tray with intricate copper and gold weave pattern and cream handles." },
+      { name: "Rattan Flower Pendant", image: handicraftRattanFlowerPendant, description: "Stunning multi-layered rattan pendant light with organic petal-like tiers and warm glow." },
       { name: "Seagrass Basket Set", image: handicraftSeagrassBasket, description: "Natural seagrass nesting baskets, handcrafted with traditional weaving techniques." },
+      { name: "Woven Glow Pendant", image: handicraftWovenGlowPendant, description: "Handwoven bamboo pendant lamp with intricate diamond weave casting beautiful light patterns." },
       { name: "Wire Hamper Basket", image: handicraftHamperBasket, description: "Elegant rattan and wire basket with metal handle, perfect for storage or display." },
+      { name: "Rattan Lantern Cluster", image: handicraftRattanLanternCluster, description: "Collection of handwoven rattan lanterns in varied sizes with warm ambient lighting." },
       { name: "Bamboo Woven Lanterns", image: handicraftBambooLantern, description: "Set of handwoven bamboo lanterns with intricate diagonal pattern and natural finish." },
       { name: "Rattan Bell Pendant", image: handicraftRattanBell, description: "Large handcrafted rattan bell-shaped pendant with open weave design and bamboo handle." },
     ],
