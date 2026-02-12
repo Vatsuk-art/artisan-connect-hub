@@ -10,8 +10,8 @@ import { supabase } from "@/integrations/supabase/client";
 const contactInfo = [
   { icon: MapPin, label: "Address", value: "WeWork, The Pavilion, 62/63 Church Street, M.G. Road, Bengaluru - 560001" },
   { icon: Phone, label: "Phone", value: "+91 8981708798 / +91 9718022632", href: "tel:+918981708798" },
-  { icon: Mail, label: "Email", value: "info@eramrglobal.com", href: "mailto:info@eramrglobal.com" },
-  { icon: Globe, label: "Website", value: "www.eramrglobal.com", href: "https://www.eramrglobal.com" },
+  { icon: Mail, label: "Email", value: "info@eramr.com", href: "mailto:info@eramr.com" },
+  { icon: Globe, label: "Website", value: "www.eramr.com", href: "https://www.eramr.com" },
 ];
 
 const Contact = () => {
@@ -121,20 +121,6 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Directors */}
-              <div className="mt-10 pt-8 border-t border-border/50">
-                <h3 className="font-display text-lg text-foreground mb-4">Directors</h3>
-                <div className="space-y-3">
-                  <div>
-                    <p className="text-foreground font-medium">Eram Roohi</p>
-                    <p className="text-sm text-muted-foreground">Director | +91 8981708798</p>
-                  </div>
-                  <div>
-                    <p className="text-foreground font-medium">Arfat Hussain</p>
-                    <p className="text-sm text-muted-foreground">Director | +91 9718022632</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
