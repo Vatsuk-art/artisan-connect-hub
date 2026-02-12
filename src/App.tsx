@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import WelcomePopup from "./components/WelcomePopup";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <WelcomePopup />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
