@@ -58,17 +58,17 @@ const About = () => {
             
             <div className="animate-fade-in-right opacity-0" style={{ animationDelay: "0.4s" }}>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-                Our <span className="text-gradient-gold">Story</span>
+                About <span className="text-gradient-gold">EramR Global</span>
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  EramR Global Private Limited was founded with a vision to bridge the gap between traditional Indian artisans and the global marketplace. What started as a small initiative has grown into a respected name in handicrafts and decor export.
+                  ERAMR GLOBAL Pvt. Ltd. is a manufacturer, supplier, and exporter of premium handicrafts and home décor products, serving clients across the globe. We combine skilled craftsmanship with high-quality materials to create products that reflect both traditional artistry and modern design.
                 </p>
                 <p>
-                  Under the leadership of our directors, Eram Roohi and Arfat Hussain, we have built a network of skilled craftsmen who specialize in various forms of traditional art – from intricate metalwork to fine textiles.
+                  With strong market expertise in India and international markets, we are committed to delivering superior quality, customization, and reliable customer service. Our diverse product range includes kitchenware, serveware, furniture, lighting, décor accessories, and brass & silverware.
                 </p>
                 <p>
-                  Every product that leaves our facility carries with it the essence of Indian heritage, crafted with meticulous attention to detail and an unwavering commitment to quality.
+                  We look forward to building long-term collaborations and growing together with our global partners.
                 </p>
               </div>
             </div>
