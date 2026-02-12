@@ -129,7 +129,7 @@ const categories: Category[] = [
     name: "Furniture",
     slug: "furniture",
     products: [
-      { name: "Mosaic Half-Moon Mirror", image: furnitureMosaicMirror, description: "Stunning half-moon mirror with mother-of-pearl mosaic inlay and matte black frame." },
+      { name: "Mosaic Half-Moon Chair", image: furnitureMosaicMirror, description: "Stunning half-moon mirror with mother-of-pearl mosaic inlay and matte black frame." },
       { name: "Royal Carved Sofa Set", image: furnitureSofaSet, description: "Luxurious hand-carved wooden sofa set with intricate floral patterns and premium upholstery." },
       { name: "Victorian Royal Accent Chair", image: furnitureRoyalChair, description: "Opulent hand-carved accent chair with gold leaf finish and premium fabric upholstery." },
       { name: "Blush Velvet Accent Chair", image: furnitureVelvetChair, description: "Modern velvet upholstered chair in soft pink with elegant channeled back design." },
@@ -201,13 +201,13 @@ const categories: Category[] = [
     slug: "handicrafts",
     products: [
       { name: "Woven Decorative Tray", image: handicraftWovenTray, description: "Handwoven round tray with intricate copper and gold weave pattern and cream handles." },
-      { name: "Rattan Flower Pendant", image: handicraftRattanFlowerPendant, description: "Stunning multi-layered rattan pendant light with organic petal-like tiers and warm glow." },
+      { name: "Rattan Flower Latern", image: handicraftRattanFlowerPendant, description: "Stunning multi-layered rattan pendant light with organic petal-like tiers and warm glow." },
       { name: "Seagrass Basket Set", image: handicraftSeagrassBasket, description: "Natural seagrass nesting baskets, handcrafted with traditional weaving techniques." },
-      { name: "Woven Glow Pendant", image: handicraftWovenGlowPendant, description: "Handwoven bamboo pendant lamp with intricate diamond weave casting beautiful light patterns." },
+      { name: "Woven Glow Latern", image: handicraftWovenGlowPendant, description: "Handwoven bamboo pendant lamp with intricate diamond weave casting beautiful light patterns." },
       { name: "Wire Hamper Basket", image: handicraftHamperBasket, description: "Elegant rattan and wire basket with metal handle, perfect for storage or display." },
       { name: "Rattan Lantern Cluster", image: handicraftRattanLanternCluster, description: "Collection of handwoven rattan lanterns in varied sizes with warm ambient lighting." },
       { name: "Bamboo Woven Lanterns", image: handicraftBambooLantern, description: "Set of handwoven bamboo lanterns with intricate diagonal pattern and natural finish." },
-      { name: "Rattan Bell Pendant", image: handicraftRattanBell, description: "Large handcrafted rattan bell-shaped pendant with open weave design and bamboo handle." },
+      { name: "Rattan Bell Lantern", image: handicraftRattanBell, description: "Large handcrafted rattan bell-shaped pendant with open weave design and bamboo handle." },
     ],
   },
 ];
