@@ -30,12 +30,18 @@ const features = [
 const Index = () => {
   return (
     <Layout>
-      {/* Hero Section */}
+      {/* Hero Section with Video Background */}
       <section className="relative min-h-[90vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/v1.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
         </div>
         
@@ -136,9 +142,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-charcoal-light border-t border-border/50">
-        <div className="container-custom section-padding text-center">
+      {/* CTA Section with Video Background */}
+      <section className="relative border-t border-border/50 overflow-hidden">
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/v2.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-background/80" />
+        </div>
+        <div className="relative container-custom section-padding text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
             Ready to Bring <span className="text-gradient-gold">Artistry Home?</span>
           </h2>

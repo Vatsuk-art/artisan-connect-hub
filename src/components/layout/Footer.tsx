@@ -70,14 +70,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail size={18} className="text-primary flex-shrink-0" />
-                <a href="mailto:info@eramrglobal.com" className="hover:text-primary transition-colors">
-                  info@eramrglobal.com
+                <a href="mailto:info@eramr.com" className="hover:text-primary transition-colors">
+                  info@eramr.com
                 </a>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Globe size={18} className="text-primary flex-shrink-0" />
-                <a href="https://www.eramrglobal.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                  www.eramrglobal.com
+                <a href="https://www.eramr.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                  www.eramr.com
                 </a>
               </li>
             </ul>
