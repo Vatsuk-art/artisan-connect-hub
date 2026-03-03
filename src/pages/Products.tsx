@@ -193,7 +193,7 @@ const categories: Category[] = [
     slug: "display-items",
     products: [
       { name: "Sculptural Gold Candlestick", image: displayGoldCandlestick, description: "Handcrafted molten-style gold candlestick holder with organic sculptural form and luxurious finish." },
-      { name: "Silver Sculpted Bowl", image: displaySilverBowl, description: "Contemporary silver-plated decorative bowl with organic crumpled form, perfect as a statement piece." },
+      { name: "Silver Sculpted Ash Tray", image: displaySilverBowl, description: "Contemporary silver-plated decorative ash tray with organic crumpled form, perfect as a statement piece." },
       { name: "Modern Gold Candle Holders", image: walldecorCandleHolders, description: "Contemporary brass candle holders with geometric designs, ideal for minimalist decor." },
       { name: "Teardrop Hanging Candle Holder", image: walldecorHangingCandle, description: "Handcrafted brass teardrop-shaped hanging candle holder with three tea light spaces." },
       { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
