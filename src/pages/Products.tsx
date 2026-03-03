@@ -84,6 +84,9 @@ import displaySilverBowl from "@/assets/display-silver-bowl.jpg";
 // New Furniture & Table additions
 import furnitureMosaicMirror from "@/assets/furniture-mosaic-mirror.jpg";
 import tableMosaicNesting from "@/assets/table-mosaic-nesting.jpg";
+import lightsGreenLantern from "@/assets/lights-green-lantern.jpg";
+import displayPendantLight from "@/assets/display-pendant-light.jpg";
+import tableNewUpload from "@/assets/table-new-upload.jpg";
 // PRODUCT DATA - Add your products here
 // ============================================
 // To add a new product:
@@ -107,6 +110,42 @@ interface Category {
 
 const categories: Category[] = [
   {
+    name: "Lamps & Chandeliers",
+    slug: "lamps-chandeliers",
+    products: [
+      { name: "Grand Crystal Chandelier", image: chandelierClassicCrystal, description: "Majestic multi-tier crystal chandelier with cascading prisms and candle-style lights." },
+      { name: "Blue Porcelain Table Lamp", image: lightsBluePorcelain, description: "Classic blue and white porcelain ginger jar lamp with intricate floral patterns and silk shade." },
+      { name: "Volcanic Pendant Light", image: chandelierVolcanicPendant, description: "Dramatic handcrafted pendant with textured volcanic exterior and warm gold-leaf interior." },
+      { name: "Brass Floral Table Lamp", image: lightsBrassFloral, description: "Sophisticated satin brass lamp with embossed floral branch design and pleated shade." },
+      { name: "Teardrop Rain Chandelier", image: chandelierTeardropRain, description: "Modern rectangular chandelier with cascading glass teardrop pendants and brass rods." },
+      { name: "Forest Green Table Lamp", image: lightsGreenRibbed, description: "Ribbed ceramic lamp in deep forest green with brass floral accents and pleated shade." },
+      { name: "Crystal Globe Pendant", image: chandelierCrystalGlobe, description: "Stunning spherical pendant covered in glittering crystal beads for elegant spaces." },
+      { name: "Teal Marble Table Lamp", image: lightsTealMarble, description: "Elegant teal marble-finish lamp with brass floral appliqué and pleated cream shade." },
+      { name: "Mid-Century Blue Chandelier", image: chandelierBlueBrass, description: "Retro-inspired three-arm chandelier with blue shades and polished brass accents." },
+      { name: "Blush Globe Pendant", image: lightsBlushPendant, description: "Modern blush pink glass globe pendant with cluster design, perfect for contemporary spaces." },
+      { name: "Modern Loop Chandelier", image: chandelierModernLoop, description: "Contemporary gold-finish chandelier with geometric oval frames and globe lights." },
+      { name: "Black Floral Porcelain Lamp", image: lightsPorcelainFloral, description: "Stunning black and white floral porcelain lamp with polished brass accents." },
+      { name: "Branch Crystal Chandelier", image: chandelierBranchCrystal, description: "Nature-inspired brass branch design with delicate crystal droplets and warm lighting." },
+      { name: "Floor Lamp with Tray", image: lightsFloorTray, description: "Modern brass floor lamp with integrated display tray and black shade with gold interior." },
+      { name: "Spiral Crystal Cascade", image: chandelierSpiralCrystal, description: "Dramatic spiral design with crystal beads and sphere, perfect for high ceilings." },
+      { name: "Blue Ginger Jar Lamp", image: lightsBlueGinger, description: "Ribbed blue ceramic ginger jar lamp with brass leaf detail and classic pleated shade." },
+      { name: "Grand Ballroom Installation", image: chandelierGrandBallroom, description: "Custom luxury chandelier installation with crystal curtains and golden rod centerpiece." },
+      { name: "Cone Floor Lamp", image: lightsFloorCone, description: "Industrial-chic floor lamp with brass cone shade and wooden display shelf." },
+      { name: "Mid-Century Wall Sconce", image: lightsWallSconce, description: "Retro-inspired double wall sconce with two-tone shades and adjustable brass arms." },
+      { name: "Vintage Green Lantern Pendant", image: lightsGreenLantern, description: "Distressed green metal lantern pendant with antique brass chain and warm ambient glow." },
+    ],
+  },
+  {
+    name: "Furniture",
+    slug: "furniture",
+    products: [
+      { name: "Mosaic Half-Moon Chair", image: furnitureMosaicMirror, description: "Stunning half-moon mirror with mother-of-pearl mosaic inlay and matte black frame." },
+      { name: "Royal Carved Sofa Set", image: furnitureSofaSet, description: "Luxurious hand-carved wooden sofa set with intricate floral patterns and premium upholstery." },
+      { name: "Victorian Royal Accent Chair", image: furnitureRoyalChair, description: "Opulent hand-carved accent chair with gold leaf finish and premium fabric upholstery." },
+      { name: "Blush Velvet Accent Chair", image: furnitureVelvetChair, description: "Modern velvet upholstered chair in soft pink with elegant channeled back design." },
+    ],
+  },
+  {
     name: "Bathroom Accessories",
     slug: "bathroom-accessories",
     products: [
@@ -118,21 +157,11 @@ const categories: Category[] = [
       { name: "Wall Mirror with Shelf", image: bathroomWallMirrorShelf, description: "Vintage-style brass-framed mirror with integrated glass shelf and chain hanger." },
       { name: "Geometric Console Mirror", image: bathroomGeometricMirror, description: "Modern geometric mirror with abstract multi-panel design and matching console table." },
       { name: "White & Gold Bath Collection", image: bathroomWhiteGoldSet, description: "Elegant matte white ceramic bath set with brass accents, includes dispenser, tray, and vanity mirror." },
-      { name: "Chrome Double Rack Shelf", image: bathroomChromeRack, description: "Sturdy stainless steel double-tier wall rack, ideal for toiletries and towels." },
+      
       { name: "Brass Tri-Fold Wall Mirror", image: walldecorTrifoldMirror, description: "Minimalist brass-framed trifold wall mirror with chain hanging, perfect for modern spaces." },
       { name: "Octagonal Brass Mirror", image: walldecorOctagonMirror, description: "Classic octagonal mirror with polished brass frame, adds geometric elegance to any room." },
       { name: "Mirror with Display Shelf", image: walldecorMirrorShelf, description: "Functional brass-framed mirror featuring an integrated shelf for decorative displays." },
       { name: "Three-Panel Brass Mirror", image: furnitureBrassMirror, description: "Vintage-style brass frame tri-fold mirror, ideal for dressing rooms and boutiques." },
-    ],
-  },
-  {
-    name: "Furniture",
-    slug: "furniture",
-    products: [
-      { name: "Mosaic Half-Moon Chair", image: furnitureMosaicMirror, description: "Stunning half-moon mirror with mother-of-pearl mosaic inlay and matte black frame." },
-      { name: "Royal Carved Sofa Set", image: furnitureSofaSet, description: "Luxurious hand-carved wooden sofa set with intricate floral patterns and premium upholstery." },
-      { name: "Victorian Royal Accent Chair", image: furnitureRoyalChair, description: "Opulent hand-carved accent chair with gold leaf finish and premium fabric upholstery." },
-      { name: "Blush Velvet Accent Chair", image: furnitureVelvetChair, description: "Modern velvet upholstered chair in soft pink with elegant channeled back design." },
     ],
   },
   {
@@ -156,31 +185,7 @@ const categories: Category[] = [
       { name: "Brass Frame Dining Table", image: tableBrassFrame, description: "Stunning polished brass dining table frame with modern geometric design for glass top." },
       { name: "Three-Tier Bar Cart", image: tableBarCart, description: "Minimalist matte black bar cart with three glass tiers and brass accent wheels." },
       { name: "Rattan Table & Stool Set", image: tableRattanSet, description: "Handwoven natural rattan table set with matching barrel stools, perfect for patios." },
-    ],
-  },
-  {
-    name: "Lamps & Chandeliers",
-    slug: "lamps-chandeliers",
-    products: [
-      { name: "Grand Crystal Chandelier", image: chandelierClassicCrystal, description: "Majestic multi-tier crystal chandelier with cascading prisms and candle-style lights." },
-      { name: "Blue Porcelain Table Lamp", image: lightsBluePorcelain, description: "Classic blue and white porcelain ginger jar lamp with intricate floral patterns and silk shade." },
-      { name: "Volcanic Pendant Light", image: chandelierVolcanicPendant, description: "Dramatic handcrafted pendant with textured volcanic exterior and warm gold-leaf interior." },
-      { name: "Brass Floral Table Lamp", image: lightsBrassFloral, description: "Sophisticated satin brass lamp with embossed floral branch design and pleated shade." },
-      { name: "Teardrop Rain Chandelier", image: chandelierTeardropRain, description: "Modern rectangular chandelier with cascading glass teardrop pendants and brass rods." },
-      { name: "Forest Green Table Lamp", image: lightsGreenRibbed, description: "Ribbed ceramic lamp in deep forest green with brass floral accents and pleated shade." },
-      { name: "Crystal Globe Pendant", image: chandelierCrystalGlobe, description: "Stunning spherical pendant covered in glittering crystal beads for elegant spaces." },
-      { name: "Teal Marble Table Lamp", image: lightsTealMarble, description: "Elegant teal marble-finish lamp with brass floral appliqué and pleated cream shade." },
-      { name: "Mid-Century Blue Chandelier", image: chandelierBlueBrass, description: "Retro-inspired three-arm chandelier with blue shades and polished brass accents." },
-      { name: "Blush Globe Pendant", image: lightsBlushPendant, description: "Modern blush pink glass globe pendant with cluster design, perfect for contemporary spaces." },
-      { name: "Modern Loop Chandelier", image: chandelierModernLoop, description: "Contemporary gold-finish chandelier with geometric oval frames and globe lights." },
-      { name: "Black Floral Porcelain Lamp", image: lightsPorcelainFloral, description: "Stunning black and white floral porcelain lamp with polished brass accents." },
-      { name: "Branch Crystal Chandelier", image: chandelierBranchCrystal, description: "Nature-inspired brass branch design with delicate crystal droplets and warm lighting." },
-      { name: "Floor Lamp with Tray", image: lightsFloorTray, description: "Modern brass floor lamp with integrated display tray and black shade with gold interior." },
-      { name: "Spiral Crystal Cascade", image: chandelierSpiralCrystal, description: "Dramatic spiral design with crystal beads and sphere, perfect for high ceilings." },
-      { name: "Blue Ginger Jar Lamp", image: lightsBlueGinger, description: "Ribbed blue ceramic ginger jar lamp with brass leaf detail and classic pleated shade." },
-      { name: "Grand Ballroom Installation", image: chandelierGrandBallroom, description: "Custom luxury chandelier installation with crystal curtains and golden rod centerpiece." },
-      { name: "Cone Floor Lamp", image: lightsFloorCone, description: "Industrial-chic floor lamp with brass cone shade and wooden display shelf." },
-      { name: "Mid-Century Wall Sconce", image: lightsWallSconce, description: "Retro-inspired double wall sconce with two-tone shades and adjustable brass arms." },
+      { name: "Decorative Table", image: tableNewUpload, description: "Elegant handcrafted decorative table with intricate detailing and premium finish." },
     ],
   },
   {
@@ -194,6 +199,7 @@ const categories: Category[] = [
       { name: "Hammered Copper Floor Vase", image: furnitureCopperVase, description: "Elegant hammered copper vases with brass accents and delicate leaf motifs." },
       { name: "Antique Brass Flower Vase", image: furnitureBrassVase, description: "Classic brass vases with embossed floral designs, perfect for traditional interiors." },
       { name: "Ceramic Vase with Blossom Art", image: furnitureCeramicVase, description: "Handpainted ceramic vases featuring cherry blossom artwork with brass trim." },
+      { name: "Design Pendant Light", image: displayPendantLight, description: "Striking woven globe pendant light with geometric framework and ambient interior glow." },
     ],
   },
   {
