@@ -232,23 +232,28 @@ const Contact = () => {
             </h2>
           </div>
           <a
-            href="https://www.google.com/maps/place/WeWork+The+Pavilion,+62%2F63,+Church+St,+Haridevpur,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka+560001"
+            href="https://www.google.com/maps/search/?api=1&query=WeWork+The+Pavilion+62+63+Church+Street+MG+Road+Bengaluru+560001"
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-lg overflow-hidden border border-border/50 relative cursor-pointer group"
+            className="block rounded-2xl overflow-hidden border border-border/50 cursor-pointer group relative"
           >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.008607082428!2d77.60617277454666!3d12.972198814880234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1681a6d8c39d%3A0x467aed9fad8ab3e0!2sWeWork%20The%20Pavilion!5e0!3m2!1sen!2sin!4v1702726800000!5m2!1sen!2sin"
-              width="100%"
-              height="400"
-              style={{ border: 0, pointerEvents: "none" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="EramR Global Office Location"
+            <img
+              src="https://maps.googleapis.com/maps/api/staticmap?center=12.9722,77.6084&zoom=16&size=800x400&scale=2&markers=color:red%7C12.9722,77.6084&style=feature:all%7Celement:geometry%7Ccolor:0x1a1a2e&style=feature:water%7Ccolor:0x2d2d44&style=feature:road%7Celement:geometry%7Ccolor:0x2a2a3e&style=feature:poi%7Cvisibility:off&key="
+              alt="WeWork The Pavilion, 62/63 Church Street, M.G. Road, Bengaluru - 560001"
+              className="w-full h-[400px] object-cover bg-muted"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                target.parentElement!.querySelector('.map-fallback')?.classList.remove('hidden');
+              }}
             />
-            <div className="absolute inset-0 bg-transparent group-hover:bg-black/10 transition-colors flex items-center justify-center">
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium flex items-center gap-2">
+            <div className="map-fallback hidden w-full h-[400px] bg-muted flex flex-col items-center justify-center gap-4">
+              <MapPin size={48} className="text-primary" />
+              <p className="text-foreground font-medium text-lg">WeWork, The Pavilion</p>
+              <p className="text-muted-foreground text-center max-w-md">62/63 Church Street, M.G. Road, Bengaluru - 560001</p>
+            </div>
+            <div className="absolute inset-0 bg-transparent group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium flex items-center gap-2 shadow-lg">
                 <MapPin size={18} /> Open in Google Maps
               </span>
             </div>
