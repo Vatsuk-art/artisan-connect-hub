@@ -231,29 +231,28 @@ const Contact = () => {
               Visit Our <span className="text-gradient-gold">Office</span>
             </h2>
           </div>
-          <div className="rounded-lg overflow-hidden border border-border/50 relative">
+          <a
+            href="https://www.google.com/maps/place/WeWork+The+Pavilion,+62%2F63,+Church+St,+Haridevpur,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka+560001"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-lg overflow-hidden border border-border/50 relative cursor-pointer group"
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.008607082428!2d77.60617277454666!3d12.972198814880234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1681a6d8c39d%3A0x467aed9fad8ab3e0!2sWeWork%20The%20Pavilion!5e0!3m2!1sen!2sin!4v1702726800000!5m2!1sen!2sin"
               width="100%"
               height="400"
-              style={{ border: 0 }}
+              style={{ border: 0, pointerEvents: "none" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="EramR Global Office Location"
             />
-          </div>
-          <div className="text-center mt-4">
-            <a
-              href="https://www.google.com/maps/place/WeWork+The+Pavilion,+62%2F63,+Church+St,+Haridevpur,+Shanthala+Nagar,+Ashok+Nagar,+Bengaluru,+Karnataka+560001"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
-            >
-              <MapPin size={18} />
-              Open in Google Maps
-            </a>
-          </div>
+            <div className="absolute inset-0 bg-transparent group-hover:bg-black/10 transition-colors flex items-center justify-center">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium flex items-center gap-2">
+                <MapPin size={18} /> Open in Google Maps
+              </span>
+            </div>
+          </a>
         </div>
       </section>
     </Layout>
