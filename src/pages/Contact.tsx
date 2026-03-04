@@ -8,7 +8,6 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
 const officeAddress = "WeWork, The Pavilion, 62/63 Church Street, M.G. Road, Bengaluru - 560001";
-const mapsUrl = "https://www.google.com/maps/search/?api=1&query=WeWork+The+Pavilion+62+63+Church+Street+MG+Road+Bengaluru+560001";
 
 const contactInfo = [
   { icon: MapPin, label: "Address", value: officeAddress },
@@ -67,17 +66,6 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleOpenMap = () => {
-    const popup = window.open(mapsUrl, "_blank", "noopener,noreferrer");
-
-    if (!popup) {
-      toast({
-        title: "Could not open Google Maps",
-        description: "Please allow popups for this site and click again.",
-        variant: "destructive",
-      });
-    }
-  };
 
   return (
     <Layout>
@@ -238,34 +226,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="bg-charcoal-light border-t border-border/50">
-        <div className="container-custom section-padding">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">
-              Visit Our <span className="text-gradient-gold">Office</span>
-            </h2>
-          </div>
-          <button
-            type="button"
-            onClick={handleOpenMap}
-            className="w-full rounded-2xl overflow-hidden border border-border/50 cursor-pointer group relative text-left"
-            aria-label={`Open ${officeAddress} in Google Maps`}
-          >
-            <div className="w-full h-[400px] bg-muted flex flex-col items-center justify-center gap-4 px-6">
-              <MapPin size={48} className="text-primary" />
-              <p className="text-foreground font-medium text-lg text-center">WeWork, The Pavilion</p>
-              <p className="text-muted-foreground text-center max-w-md">62/63 Church Street, M.G. Road, Bengaluru - 560001</p>
-            </div>
-            <div className="absolute inset-0 bg-transparent group-hover:bg-background/20 transition-colors flex items-center justify-center">
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium flex items-center gap-2 shadow-lg">
-                <MapPin size={18} /> Open in Google Maps
-              </span>
-            </div>
-          </button>
-          <p className="text-center text-sm text-muted-foreground mt-3">Click the map card to open the exact office location in Google Maps.</p>
-        </div>
-      </section>
     </Layout>
   );
 };
