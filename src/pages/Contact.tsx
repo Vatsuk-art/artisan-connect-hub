@@ -7,8 +7,11 @@ import Layout from "@/components/layout/Layout";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
+const officeAddress = "WeWork, The Pavilion, 62/63 Church Street, M.G. Road, Bengaluru - 560001";
+const mapsUrl = "https://www.google.com/maps/search/?api=1&query=WeWork+The+Pavilion+62+63+Church+Street+MG+Road+Bengaluru+560001";
+
 const contactInfo = [
-  { icon: MapPin, label: "Address", value: "WeWork, The Pavilion, 62/63 Church Street, M.G. Road, Bengaluru - 560001" },
+  { icon: MapPin, label: "Address", value: officeAddress },
   { icon: Phone, label: "Phone", value: "+91 8981708798 / +91 9718022632", href: "tel:+918981708798" },
   { icon: Mail, label: "Email", value: "info@eramr.com", href: "mailto:info@eramr.com" },
   { icon: Globe, label: "Website", value: "www.eramr.com", href: "https://www.eramr.com" },
@@ -62,6 +65,18 @@ const Contact = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleOpenMap = () => {
+    const popup = window.open(mapsUrl, "_blank", "noopener,noreferrer");
+
+    if (!popup) {
+      toast({
+        title: "Could not open Google Maps",
+        description: "Please allow popups for this site and click again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -231,33 +246,24 @@ const Contact = () => {
               Visit Our <span className="text-gradient-gold">Office</span>
             </h2>
           </div>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=WeWork+The+Pavilion+62+63+Church+Street+MG+Road+Bengaluru+560001"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block rounded-2xl overflow-hidden border border-border/50 cursor-pointer group relative"
+          <button
+            type="button"
+            onClick={handleOpenMap}
+            className="w-full rounded-2xl overflow-hidden border border-border/50 cursor-pointer group relative text-left"
+            aria-label={`Open ${officeAddress} in Google Maps`}
           >
-            <img
-              src="https://maps.googleapis.com/maps/api/staticmap?center=12.9722,77.6084&zoom=16&size=800x400&scale=2&markers=color:red%7C12.9722,77.6084&style=feature:all%7Celement:geometry%7Ccolor:0x1a1a2e&style=feature:water%7Ccolor:0x2d2d44&style=feature:road%7Celement:geometry%7Ccolor:0x2a2a3e&style=feature:poi%7Cvisibility:off&key="
-              alt="WeWork The Pavilion, 62/63 Church Street, M.G. Road, Bengaluru - 560001"
-              className="w-full h-[400px] object-cover bg-muted"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                target.parentElement!.querySelector('.map-fallback')?.classList.remove('hidden');
-              }}
-            />
-            <div className="map-fallback hidden w-full h-[400px] bg-muted flex flex-col items-center justify-center gap-4">
+            <div className="w-full h-[400px] bg-muted flex flex-col items-center justify-center gap-4 px-6">
               <MapPin size={48} className="text-primary" />
-              <p className="text-foreground font-medium text-lg">WeWork, The Pavilion</p>
+              <p className="text-foreground font-medium text-lg text-center">WeWork, The Pavilion</p>
               <p className="text-muted-foreground text-center max-w-md">62/63 Church Street, M.G. Road, Bengaluru - 560001</p>
             </div>
-            <div className="absolute inset-0 bg-transparent group-hover:bg-black/20 transition-colors flex items-center justify-center">
+            <div className="absolute inset-0 bg-transparent group-hover:bg-background/20 transition-colors flex items-center justify-center">
               <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium flex items-center gap-2 shadow-lg">
                 <MapPin size={18} /> Open in Google Maps
               </span>
             </div>
-          </a>
+          </button>
+          <p className="text-center text-sm text-muted-foreground mt-3">Click the map card to open the exact office location in Google Maps.</p>
         </div>
       </section>
     </Layout>
