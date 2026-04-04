@@ -44,6 +44,17 @@ const Contact = () => {
 
       if (error) throw error;
 
+      // Send email notification to info@eramr.com
+      await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim() || undefined,
+          subject: formData.subject.trim(),
+          message: formData.message.trim(),
+        },
+      });
+
       toast({
         title: "Message Sent!",
         description: "Thank you for contacting us. We'll get back to you soon.",
